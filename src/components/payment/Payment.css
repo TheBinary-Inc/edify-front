@@ -1,0 +1,170 @@
+.admin__payment > h1 {
+    font-family: var(--main-poppins-font);
+    margin: 20px 8px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.payment__balans {
+    flex: 1;
+    height: 199px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment__students {
+    width: 568px;
+    height: 199px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: var(--main-buildingblock-border-radius);
+    box-shadow:  var(--main-buildingblock-shadow);
+}
+
+.paid {
+    width: 216px;
+    height: 161px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paid > span {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.indicator_pay {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.indicator_pay > span {
+    font-size: 80px;
+    font-weight: 500;
+    color: #0CA409;
+    margin-right: 16px;
+}
+
+.vertical__line {
+    height: 72px;
+    width: 1.5px;
+    background-color: #C4C4C4;
+}
+
+#dont__pay{
+    color:#FF3B30;
+}
+
+
+.balance {
+    width: 903px;
+    flex-grow: 2;
+    height: 199px;
+    margin-left: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.06);
+}
+
+.general__balance {
+    width: 369px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 9px;
+}
+
+.general__balance > span,
+.general__fines > span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.general__balance > p,
+.general__fines > p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 11px 0 4px 0;
+    color:#00000085;
+}
+
+.general__balance > h1,
+.general__fines > h1 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #0CA409;
+    margin-bottom: 5px;
+}
+
+.general__fines > h1 {
+    color: #FBC60A;
+}
+
+#percent {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.general__fines {
+    width: 369px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 39px;
+    margin-top: 9px;
+}
+
+/* Table start here */
+.table__content{
+    width: 100%;
+    height: 600px;
+    overflow-y: auto;
+    margin-top: 30px;
+}
+
+
+table{
+    width: 98%;
+    margin: 0px auto;
+    border-collapse: collapse;
+}
+
+.payment__tr-thead{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.payment__tr-thead > th{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #6C6C6C;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.payment__tr-tbody{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--main-buildingblock-shadow);
+}
+
+.payment__tr-tbody td{
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.space{
+    height: 20px;
+}
