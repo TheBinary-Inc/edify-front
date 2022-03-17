@@ -36,6 +36,7 @@ const Sidebar = () => {
               to={`${url}/${sidebar__tabs.route}`}
             >
               {sidebar__tabs.icon} {sidebar &&   <p>{sidebar__tabs.sidebarTitle}</p>}
+              {!sidebar && <div className="tooltip"> {sidebar__tabs.sidebarTitle}</div>}
             </NavLink>
           </li>
         ))}

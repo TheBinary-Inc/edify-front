@@ -9,7 +9,7 @@ import { ReactComponent as CalendarIcon } from '../assets/UI-icons/calendar.svg'
 import { ReactComponent as DashboardIcon } from '../assets/UI-icons/dashboard.svg';
 import { ReactComponent as MoneyIcon } from '../assets/UI-icons/money.svg';
 import { ReactComponent as TableIcon } from '../assets/UI-icons/table.svg';
-import { ReactComponent as TeacherIcon } from '../assets/UI-icons/teacher.svg';
+import { ReactComponent as TeacherIcon } from '../assets/UI-icons/teacher-tab.svg';
 import { ReactComponent as SettingIcon} from '../assets/UI-icons/setting.svg'
 
 export const SIDEBAR_STATIC_DATA = [
@@ -55,4 +55,92 @@ export const SIDEBAR_STATIC_DATA = [
         route: "settings",
         component: <Settings/>,
     }
+]
+
+export const Teachers_Data = [
+    {
+        id: 0,
+        occupation: "Software Engineer",
+        collectionUL: [
+            {
+                fullName: "John Doe Lemoni",
+                salary: "4.000.000 so'm",
+                pupilsNumber: 116,
+                groups: 10
+            }
+        ]
+    },
+    {
+        id: 1,
+        occupation: "Software Engineer",
+        collectionUL: [
+            {
+                fullName: "John Doe Lemoni",
+                salary: "4.000.000 so'm",
+                pupilsNumber: 116,
+                groups: 10
+            }
+        ]
+    },
+    {
+        id: 2,
+        occupation: "Software Engineer",
+        collectionUL: [
+            {
+                fullName: "John Doe Lemoni",
+                salary: "4.000.000 so'm",
+                pupilsNumber: 116,
+                groups: 10
+            }
+        ]
+    },
+    {
+        id: 3,
+        occupation: "Software Engineer",
+        collectionUL: [
+            {
+                fullName: "John Doe Lemoni",
+                salary: "4.000.000 so'm",
+                pupilsNumber: 116,
+                groups: 10
+            }
+        ]
+    },
+    {
+        id: 4,
+        occupation: "Software Engineer",
+        collectionUL: [
+            {
+                fullName: "John Doe Lemoni",
+                salary: "4.000.000 so'm",
+                pupilsNumber: 116,
+                groups: 10
+            }
+        ]
+    },
+    {
+        id: 5,
+        occupation: "Software Engineer",
+        collectionUL: [
+            {
+                fullName: "John Doe Lemoni",
+                salary: "4.000.000 so'm",
+                pupilsNumber: 116,
+                groups: 10
+            }
+        ]
+    },
+    {
+        id: 6,
+        occupation: "Software Engineer",
+        collectionUL: [
+            {
+                fullName: "",
+                salary: "4.000.000 so'm",
+                pupilsNumber: 116,
+                groups: 10
+            }
+        ]
+    }
+
 ]

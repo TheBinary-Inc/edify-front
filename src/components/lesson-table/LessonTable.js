@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Home = () => {
-    
+const LessonTable = () => {
     return (
         <div>
-
+            
         </div>
     )
 }
 
-export default Home
+export default LessonTable

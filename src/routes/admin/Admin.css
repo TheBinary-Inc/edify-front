@@ -1,12 +1,16 @@
 .admin__container{
     min-width: 1366px;
-    height: 100vh;
+    height: 1120px;
     display: flex;
+    margin: 50px auto;
     align-items: center;
+    max-width: 2500px;
 }
 
 .main__container{
+    max-width: 2000px;
+    margin-top: -55px;
     margin-right: 32px;
     flex: 1;
-    height: 100vh;
+    height: 1120px;
 }
