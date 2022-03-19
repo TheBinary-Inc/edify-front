@@ -10,7 +10,18 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Payment = () => {
-
+  const scaleOut = (e) => {
+    const allTb = document.querySelectorAll(".tb");
+    allTb.forEach(tb => {
+            if(tb.getBoundingClientRect().top < 1030){
+              tb.style.transform = "scale(1.01)"
+            }
+            else if(tb.getBoundingClientRect().top > 200){
+              tb.style.transform = "scale(0.9)"
+            }
+        }
+    )
+  }
   return (
     <div className="admin__payment">
       <h1>To’lov</h1>
@@ -79,7 +90,7 @@ const Payment = () => {
           </div>
         </div>
       </div>
-      <div className="table__content">
+      <div className="table__content" onScroll={(e) => scaleOut(e)}>
       <table>
           <thead>
             <tr className="payment__tr-thead">
