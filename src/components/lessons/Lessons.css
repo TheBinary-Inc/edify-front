@@ -1,0 +1,10 @@
+.lessons{
+    padding: 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lesson-days{
+    width: 100%;
+    display: flex;
+}

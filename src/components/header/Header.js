@@ -13,8 +13,6 @@ import { ReactComponent as TimesIcon } from "../../assets/UI-icons/times.svg";
 const Header = () => {
     const [search, setSearch] = useState(false)
     const [searchValue, setSearchValue] = useState("")
-    console.log(searchValue);
-
     const [selectedDay, setSelectedDay] = useState(null);
     const date = new Date()
     let day = date.getDate();
