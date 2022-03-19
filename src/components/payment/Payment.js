@@ -103,7 +103,7 @@ const Payment = () => {
                 <th>Batafsil</th>
             </tr>  
           </thead>
-          
+           
             {
               Payment_Static.map(student => 
                 <tbody className="tb">
