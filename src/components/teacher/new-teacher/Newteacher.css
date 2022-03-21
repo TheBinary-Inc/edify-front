@@ -1,0 +1,86 @@
+.new__teacher__main__container {
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: var(--main-headerbox-border-radius);
+  box-shadow: var(--main-buildingblock-shadow);
+}
+
+.new__teacher__title {
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.info__wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.teachers__information {
+  /* width: 50%; */
+  justify-content: space-evenly;
+
+}
+
+.teachers__information>form {
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.teachers__information>form>label {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 20px 0px;
+}
+
+.teachers__information>form>input {
+  border: 1px solid #fbc100;
+  outline: none;
+  width: 800px;
+  height: 50px;
+  text-indent: 20px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+.teachers__information>form>label>span {
+  color: gold;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.teachers__information>form>input::placeholder {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.teachers__information>form>input:focus {
+  box-shadow: 0px 0px 10px 2px rgba(240, 153, 40, 0.747);
+}
+
+.teachers__information__form2 {
+  background-color: blue;
+}
+
+.add__new__teacher {
+  width: 270px;
+  height: 70px;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-left: 850px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: var(--main-headerbox-border-radius);
+  box-shadow: var(--main-buildingblock-shadow);
+  background-color: var(--active-mode);
+}
