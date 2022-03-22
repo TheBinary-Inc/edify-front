@@ -25,3 +25,67 @@
     margin: 30px 0;
     font-size: 45px;
 }
+
+#login_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_input{
+    width: 80%;
+    height: 45px;
+    margin: 10px 10%;
+    border-radius: 5px;
+    font-size: 20px;
+    text-indent: 10px;
+    outline: none;
+    border: 1px solid #a4a4a4;
+}
+
+.login_input:focus{
+    border: 1px solid #EF4136;
+    box-shadow: 0px 0px 0px 4px #fea7a1;
+}
+
+.login_persist{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.persist_check{
+    margin-right: 10px;
+    transform: scale(2);
+}
+
+.login_submit{
+    font-size: 20px;
+    width: 300px;
+    height: 45px;
+    margin-top: 25px;
+    background-color: #EF4136;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.login_copyright{
+    font-size: 18px;
+    color: gray;
+    margin-top: 70px;
+}
+
+.login_validatealert{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    font-size: 18px;
+    padding: 10px 0px;
+    padding-left: 30px;
+}
+
+.login_validatealert > svg{
+    margin-right: 10px;
+}
