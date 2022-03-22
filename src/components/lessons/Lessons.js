@@ -27,7 +27,7 @@ const Lessons = ({ Room_Static, allrooms }) => {
           />
         ))}
       </div>
-      <h2>Seshanba-Payshanba-Shanba</h2>
+      <h2>Seshanba-Payshanba-Shanba</h2>ce
       <div className="lesson-days">
         {spsh.map(({ id, roomNumber, roomInfo }) => (
           <LessonItem

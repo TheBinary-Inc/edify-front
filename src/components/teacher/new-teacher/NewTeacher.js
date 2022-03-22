@@ -4,7 +4,6 @@ const NewTeacher = () => {
   const [shadow, setShadow] = useState(false)
   return (
     <div className="new__teacher__main__container">
-      <h1 style={{padding: "20px"}}>O'qituvchi qo'shish</h1>
       <div className="registration_teacher">
         <form>
           
