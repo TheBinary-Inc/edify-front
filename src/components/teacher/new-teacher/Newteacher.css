@@ -1,86 +1,76 @@
 .new__teacher__main__container {
   width: 100%;
-  min-height: 100vh;
-  max-height: auto;
   background-color: #fff;
   margin-top: 30px;
   border-radius: var(--main-headerbox-border-radius);
   box-shadow: var(--main-buildingblock-shadow);
 }
 
-.new__teacher__title {
-  padding: 10px 20px;
-  font-weight: 500;
+.registration_teacher {
+  width: 95%;
+  margin: 0 auto;
 }
 
-.info__wrapper {
-  width: 100%;
-  height: auto;
+.registration_teacher > form {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
-
-}
-
-.teachers__information {
-  /* width: 50%; */
-  justify-content: space-evenly;
-
-}
-
-.teachers__information>form {
-  display: flex;
-  width: auto;
   flex-direction: column;
-  margin-top: 30px;
-}
-
-.teachers__information>form>label {
-  font-size: 25px;
-  font-weight: 300;
-  margin: 20px 0px;
-}
-
-.teachers__information>form>input {
-  border: 1px solid #fbc100;
-  outline: none;
-  width: 800px;
-  height: 50px;
-  text-indent: 20px;
-  font-size: 25px;
-  border-radius: 15px;
-}
-
-.teachers__information>form>label>span {
-  color: gold;
-  font-weight: 900;
-  font-size: 25px;
-}
-
-.teachers__information>form>input::placeholder {
-  font-style: italic;
   font-size: 20px;
 }
 
-.teachers__information>form>input:focus {
-  box-shadow: 0px 0px 10px 2px rgba(240, 153, 40, 0.747);
+.registration_teacher > form p {
+  margin: 15px 0;
+  font-weight: 500;
 }
 
-.teachers__information__form2 {
-  background-color: blue;
+.registration_teacher > form p > span {
+  color: var(--secondary-extractedblock-active-color);
 }
 
-.add__new__teacher {
-  width: 270px;
-  height: 70px;
+.registration_teacher > form input {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  text-indent: 20px;
+  outline: none;
+  border: 2px solid;
+  border-color: #EE4236 #EE4236;
+  border-radius: var(--main-headerbox-border-radius);
+}
+
+.registration_teacher > form > input:focus {
+  box-shadow: #EE4236 0px 0px 10px;
+}
+
+form > .phone_number {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border-radius: var(--main-buildingblock-border-radius);
+  border: 2px solid #EE4236;
+  overflow: hidden;
+}
+
+form > .phone_number > input {
   border: none;
   outline: none;
-  font-size: 40px;
-  font-weight: 500;
-  margin-top: 50px;
-  margin-left: 850px;
-  cursor: pointer;
+  border-radius: 0;
+}
+
+form > .phone_number > input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.registration_teacher button {
+  width: 200px;
+  height: 50px;
+  border-radius: var(--main-buildingblock-border-radius);
+  border: none;
+  font-size: 22px;
+  margin: 50px auto;
+  background-color: #EE4236;
   color: #fff;
-  border-radius: var(--main-headerbox-border-radius);
-  box-shadow: var(--main-buildingblock-shadow);
-  background-color: var(--active-mode);
+  
 }
