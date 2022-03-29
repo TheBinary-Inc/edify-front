@@ -101,4 +101,7 @@
   right: 378px;
   color: #fff;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
