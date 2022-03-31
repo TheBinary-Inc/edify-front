@@ -141,7 +141,7 @@ table{
 .payment__tr-thead{
     position: sticky;
     top: -50px;
-    z-index: 100;
+    z-index: 2;
     background-color: #fff;
 }
 

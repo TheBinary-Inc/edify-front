@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  position: relative;
+  /* position: relative; */
   border-radius: var(--main-headerbox-border-radius);
   box-shadow: var(--main-buildingblock-shadow);
   font-family: var(--main-roboto-font);
@@ -17,7 +17,7 @@
   width: 50%;
   /* background-color: red; */
   height: 640px;
-  position: absolute;
+  /* position: absolute; */
   top: 20px;
   left: 80px;
 }
@@ -85,9 +85,9 @@
 
 .right {
   width: 50%;
-  position: absolute;
-  right: 0px;
-  top: 21px;
+  position: relative;
+  right: -80px;
+  top: -45px;
 }
 
 .add_btn {
@@ -96,9 +96,8 @@
   background-color: #EF4136;
   position: absolute;
   border-radius: 15px;
-  bottom: 50px;
+  bottom: 70px;
   font-size: 20px;
-  right: 378px;
   color: #fff;
   border: none;
   display: flex;
