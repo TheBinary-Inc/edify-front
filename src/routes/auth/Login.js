@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import './Login.css';
+import { useDispatch, useSelector } from 'react-redux';
 import logo from '../../assets/logo.svg';
 import { FiAlertCircle, FiCheckCircle} from 'react-icons/fi';
 import login_instance from '../../apis/new-teacher';
+import { Redirect, useLocation } from 'react-router-dom';
 import Loader from "../../components/loader/Loader";
+import { authUserSuccess, authUserFail } from '../../redux/actions/authActions';
 
 const Login = () => {
-
+    const location = useLocation();
+    const dispatch = useDispatch();
+    const user = useSelector(state => state);
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [loading, setLoading] = useState(false);
@@ -38,7 +43,7 @@ const Login = () => {
 
 
 
-    const CreateUser = (e) => {
+    const handleLogin = (e) => {
         e.preventDefault()
         setLoading(true);
         login_instance.post("login", {
@@ -46,14 +51,15 @@ const Login = () => {
           password: password,
         }, {timeout: 10000})
         .then(newUser =>{
-           console.log(newUser.data)
+           dispatch(authUserSuccess(newUser.data))
            setLoading(false)
            setSuccess(true)
            setMessageServer(newUser.data.message);
           })
         .catch(err => {
-          setLoading(false)
-          setSuccess(false)
+            dispatch(authUserFail())
+            setLoading(false)
+            setSuccess(false)
           if(err.code){
             setMessageServer("Internet bilan ulanishni tekshiring!")
             console.log(err.message)
@@ -70,7 +76,14 @@ const Login = () => {
         marginRight: "10px"
       }
 
-    return (
+    return user.user ?  <Redirect
+    to={{
+      pathname: "/admin",
+      state: {
+        from: location.pathname
+      }
+    }}
+  /> : (
         <div className="login_page">
             <div className="login_panel">
                 <img className="login_logo" src={logo} alt="" />
@@ -78,7 +91,7 @@ const Login = () => {
                 {
                     messageServer && <p className="server__message" style={success ? {background: "#1aac1a"} : {background: "#e82c2c"}}>{messageServer}</p>
                 }
-                <form id="login_form" onSubmit={CreateUser} >
+                <form id="login_form" onSubmit={handleLogin} >
                     <input required minLength="5" className="login_input" value={loginData.username}
                     onChange={e => {setUsername(e.target.value)
                         setLoginData({...loginData, username: e.target.value})}
