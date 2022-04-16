@@ -11,6 +11,8 @@ import { ReactComponent as MoneyIcon } from '../assets/UI-icons/money.svg';
 import { ReactComponent as TableIcon } from '../assets/UI-icons/table.svg';
 import { ReactComponent as TeacherIcon } from '../assets/UI-icons/teacher-tab.svg';
 import { ReactComponent as SettingIcon} from '../assets/UI-icons/setting.svg'
+import { ReactComponent as StudentIcon} from '../assets/UI-icons/student.svg'
+import Student from '../components/student/Student';
 
 export const SIDEBAR_STATIC_DATA = [
     {
@@ -36,20 +38,27 @@ export const SIDEBAR_STATIC_DATA = [
     },
     {
         id: 3,
+        sidebarTitle: "O'quvchilar",
+        icon: <StudentIcon/>,
+        route: "students",
+        component: <Student/>
+    },
+    {
+        id: 4,
         sidebarTitle: "Dars jadvali",
         icon: <TableIcon/>,
         route: "table",
         component: <Table/>,
     },
     {
-        id: 4,
+        id: 5,
         sidebarTitle: "Davomat",
         icon: <CalendarIcon/>,
         route: "attendance",
         component: <Attendance/>,
     },
     {
-        id: 5,
+        id: 6,
         sidebarTitle: "Sozlamalar",
         icon: <SettingIcon/>,
         route: "settings",
