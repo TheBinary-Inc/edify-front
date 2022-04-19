@@ -22,7 +22,7 @@ const Payment = () => {
   };
   return (
     <div className="admin__payment">
-      <h1>To’lov</h1>
+      <h1 className="route__title">To’lov</h1>
       <div className="payment__balans">
         <div className="payment__students">
           <div className="paid">

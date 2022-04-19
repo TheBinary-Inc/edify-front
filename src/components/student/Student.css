@@ -2,3 +2,9 @@
   width: 40%;
   justify-content: center;
 }
+
+.route__title{
+  font-size: 48px;
+  margin: 20px 0px 10px 0px;
+  font-family: var(--main-font-poppins);
+}

@@ -4,6 +4,7 @@
     box-shadow: var(--main-headerbox-shadow);
     border-radius: var(--main-headerbox-border-radius);
     margin: 30px auto;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;

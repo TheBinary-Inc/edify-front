@@ -1,7 +1,9 @@
 import React from "react";
 import { Switch, Route, NavLink, useRouteMatch } from "react-router-dom";
 import ListTeacher from "../list-teacher/ListTeacher";
+import Personal from '../personal/Personal';
 import NewTeacher from "../teacher/new-teacher/NewTeacher";
+import Notification from '../notifications/Notifications';
 import "./Teacher.css";
 
 const Teacher = () => {
@@ -52,6 +54,12 @@ const Teacher = () => {
         </Route>
         <Route path={`${path}/new`}>
           <NewTeacher />
+        </Route>
+        <Route path={`${path}/personal`}>
+          <Personal />
+        </Route>
+        <Route path={`${path}/notifications`}>
+          <Notification />
         </Route>
       </Switch>
     </div>

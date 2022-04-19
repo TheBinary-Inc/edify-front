@@ -60,3 +60,23 @@ export const Room_Static = [
         }
     }
 ]   
+
+
+export const Messages_Static = [
+    {
+        id: 0,
+        message: "lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet"
+    },
+    {
+        id: 1,
+        message: "lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet"
+    },
+    {
+        id: 2,
+        message: "lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet"
+    },
+    {
+        id: 3,
+        message: "lorem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet orem ipsum dolor sit amet"
+    }
+]

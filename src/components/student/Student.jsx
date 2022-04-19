@@ -1,9 +1,10 @@
 import React from 'react';
-import './Student.css'
-import { NavLink, useRouteMatch } from 'react-router-dom';
+import './Student.css';
+import NewStudent from './new-student/NewStudentd';
+import { Switch,  NavLink, Route, useRouteMatch } from 'react-router-dom';
 
 const Student = () => {
-  const { url } = useRouteMatch();
+  const { url, path } = useRouteMatch();
   return (
     <div>
        <h1 className="route__title">O'quvchilar</h1>
@@ -24,6 +25,11 @@ const Student = () => {
           Shaxsiy ma'lumot
         </NavLink>
       </div>
+      <Switch>
+        <Route path={`${path}/new`}>
+          <NewStudent />
+        </Route>
+      </Switch>
     </div>
   )
 }
