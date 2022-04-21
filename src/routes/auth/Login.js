@@ -11,7 +11,7 @@ import { authUserSuccess, authUserFail } from '../../redux/actions/authActions';
 const Login = () => {
     const location = useLocation();
     const dispatch = useDispatch();
-    const user = useSelector(state => state);
+    const user = useSelector(state => state.user);
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [loading, setLoading] = useState(false);
@@ -38,7 +38,7 @@ const Login = () => {
                 setMessage("Barcha malumotlar yaroqli!")
             }
         }
-        validate()
+        return () => validate()
     }, [loginData])
 
 
@@ -76,7 +76,7 @@ const Login = () => {
         marginRight: "10px"
       }
 
-    return user.user ?  <Redirect
+    return user.isAuthenticated ?  <Redirect
     to={{
       pathname: "/admin",
       state: {
