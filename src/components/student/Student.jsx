@@ -2,6 +2,7 @@ import React from 'react';
 import './Student.css';
 import NewStudent from './new-student/NewStudentd';
 import { Switch,  NavLink, Route, useRouteMatch } from 'react-router-dom';
+import NewGroup from './new-group/NewGroup';
 
 const Student = () => {
   const { url, path } = useRouteMatch();
@@ -9,6 +10,7 @@ const Student = () => {
     <div>
        <h1 className="route__title">O'quvchilar</h1>
       <div className="tabs" id="auto">
+        
         <NavLink
           activeClassName="teacher_activetab"
           className="teacher_tab"
@@ -16,7 +18,13 @@ const Student = () => {
         >
           O'quvchi qo'shish
         </NavLink>
-        
+        <NavLink
+          activeClassName="teacher_activetab"
+          className="teacher_tab"
+          to={`${url}/newgroup`}
+        >
+         Yangi guruh yaratish
+        </NavLink>
         <NavLink
           activeClassName="teacher_activetab"
           className="teacher_tab"
@@ -28,6 +36,9 @@ const Student = () => {
       <Switch>
         <Route path={`${path}/new`}>
           <NewStudent />
+        </Route>
+        <Route path={`${path}/newgroup`}>
+          <NewGroup />
         </Route>
       </Switch>
     </div>

@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Personal.css"
 import { useSelector } from 'react-redux';
-import   location from "../../assets/personal-svg/location.svg"
 import call from "../../assets/personal-svg/call.svg"
 import foyiz from "../../assets/personal-svg/foyiz.svg"
 import medal from "../../assets/personal-svg/medal.svg"
@@ -24,7 +23,7 @@ const Personal = () => {
         <div className="contact">
             <div className="location" style={{marginLeft: "-15px"}}>
                 <img src={location} alt="" />
-                <span>{teacher.user.user.address}</span>
+                <span>{teacher?.user?.user?.address}</span>
             </div>
             <div className="location">
                 <img src={call} alt="" />

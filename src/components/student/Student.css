@@ -1,6 +1,6 @@
 #auto{
-  width: 40%;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .route__title{
