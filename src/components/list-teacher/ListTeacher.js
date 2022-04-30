@@ -60,7 +60,7 @@ const ListTeacher = () => {
                   {" "}
                   <p>O'quvchilari</p>{" "}
                   {teacher?.groups?.length
-                    ? teacher?.groups?.map((st) => st.students.length)
+                    ? teacher?.groups?.map((st) => st.students.length)?.reduce((a, b) => a + b, 0)
                     : 0}{" "}
                   ta <p style={{ paddingLeft: "10px" }}>Guruhlari</p>
                   {teacher?.groups.length} ta{" "}
